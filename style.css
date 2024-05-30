@@ -229,7 +229,7 @@ main{
 
 }
    
-}
+
 
 
 
@@ -374,8 +374,8 @@ footer{
 
 
 /**********************RESPONSIVIDADE************************/
-/* Estilos para telas de 320px a 480px */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+/* Estilos para telas de 320px a 1250px */
+@media only screen and (min-width: 320px) and (max-width: 1250px) {
     header{
         height: 60px;
         width: 100%;
@@ -476,19 +476,27 @@ footer{
         }
     }
     /********EDITANDO PAGINA SOBRE MIM*******/
-
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .sobremim{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 95%;
     height: auto;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 3rem;
+    
         img{
             width: 90%;
             border-radius: 50%;
             border: 1rem solid var(--text-white);
+            margin-bottom: 2rem;
         }
         .details{
             display: flex;
@@ -532,7 +540,7 @@ footer{
 }
 
 .habilidades{
-  
+    width: 95%;
     margin-top: 3rem;
 }
 
@@ -554,18 +562,17 @@ footer{
 }
 
 .contato{
+    width: 95%;
     padding: 5rem 0rem;
     .divs-contatos{
         display: flex;
         gap: 1rem;
         flex-direction: column;
-        
-        
         color: #466E40;
         div{
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 2rem;
             padding: 1rem 1rem;
             background-color: var(--text-white);
             border-radius: 0.3rem;
@@ -573,6 +580,9 @@ footer{
             width: 100%;
             cursor: pointer;
             transition: 1s;
+                i{
+                    color: #466E40;
+                }
         }
         a{
             text-decoration: none;
@@ -580,7 +590,7 @@ footer{
         }
         .icons{
             font-size: 3rem;
-           
+            gap: 10px;
         }
         div:hover{
             background-color: #162023;
